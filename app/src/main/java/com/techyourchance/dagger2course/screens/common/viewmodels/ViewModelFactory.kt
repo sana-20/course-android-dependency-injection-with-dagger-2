@@ -12,6 +12,7 @@ import com.techyourchance.dagger2course.screens.viewmodel.MyViewModel2
 import javax.inject.Inject
 import javax.inject.Provider
 
+@Suppress("UNCHECKED_CAST")
 class ViewModelFactory @Inject constructor(
         private val providersMap: Map<Class<out ViewModel>, @JvmSuppressWildcards Provider<ViewModel>>,
         savedStateRegistryOwner: SavedStateRegistryOwner
